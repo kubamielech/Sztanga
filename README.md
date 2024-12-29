@@ -1,2 +1,2 @@
 # kalkulator talerzy
-Live: 
+live: https://kubamielech.github.io/kalkulator_talerzy/
