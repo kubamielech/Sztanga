@@ -1,0 +1,96 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin: 20px;
+}
+.barbell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.bar {
+	width: 400px;
+	height: 20px;
+	background-color: #000;
+}
+.plates {
+    display: flex;
+    align-items: center;
+}
+.plate {
+	display: inline-block;
+    color: #fff;
+	text-align: center;
+	margin: 0 2px;
+    padding: 5px 0;
+	border-radius: 10px;
+}
+.plate[data-weight='25'] {
+	background-color: tomato;
+	width: 30px;
+	height: 90px;
+    line-height: 90px;
+}
+.plate[data-weight='20'] {
+	background-color: royalblue;
+	width: 30px;
+	height: 80px;
+    line-height: 80px;
+}
+.plate[data-weight='15'] {
+    color: #000;
+	background-color: yellow;
+	width: 30px;
+	height: 70px;
+    line-height: 70px;
+}
+.plate[data-weight='10'] {
+	background-color: limegreen;
+	width: 30px;
+	height: 60px;
+    line-height: 60px;
+}
+.plate[data-weight='5'] {
+	background-color: darkgray;
+	width: 30px;
+	height: 50px;
+    line-height: 50px;
+}
+.plate[data-weight='2.5'] {
+	background-color: tomato;
+	width: 30px;
+	height: 40px;
+    line-height: 40px;
+}
+.plate[data-weight='1.25'] {
+	background-color: royalblue;
+	width: 30px;
+	height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+}
+.input {
+    width: 50px;
+}
+.mobile {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button[id="resetButton"] {
+    margin-left: 5px;
+}
+@media (max-width: 600px) {
+	.bar {
+		width: 300px;
+	}
+	.plate {
+		line-height: normal;
+		margin: 1px;
+	}
+    .mobile {
+        display: block;
+    }
+}

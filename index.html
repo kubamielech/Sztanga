@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oblicz talerze na sztangę</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Oblicz talerze na sztangę</h1>
+    <form id="barbellForm">
+        <fieldset>
+            <legend>Wybierz dostępne talerze:</legend>
+            <label><input type="checkbox" name="plates" value="25"> 25kg</label>
+            <label><input type="checkbox" name="plates" value="20" checked> 20kg</label>
+            <label><input type="checkbox" name="plates" value="15" checked> 15kg</label>
+            <label><input type="checkbox" name="plates" value="10" checked> 10kg</label><br class="mobile">
+            <label><input type="checkbox" name="plates" value="5" checked> 5kg</label>
+            <label><input type="checkbox" name="plates" value="2.5" checked> 2.5kg</label>
+            <label><input type="checkbox" name="plates" value="1.25" checked> 1.25kg</label>
+        </fieldset>
+
+        <br>
+
+        <label for="barbellWeight">Waga sztangi (kg):</label>
+        <input class="input" type="number" id="barbellWeight" name="barbellWeight" step="0.5" value="20" required><br><br>
+
+        <label for="targetWeight">Docelowa waga (kg):</label>
+        <input class="input" type="number" id="targetWeight" name="targetWeight" step="0.5" required value=""><br><br>
+
+        <button type="submit">Oblicz</button>
+        <button type="button" id="resetButton">Reset</button>
+    </form>
+
+    <div id="result" class="barbell" style="display: none;">
+        <div class="plates" id="platesLeft"></div>
+        <div class="bar"></div>
+        <div class="plates" id="platesRight"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
